@@ -2,12 +2,12 @@
   "name": "cheassy-cheese",
   "version": "1.0.0",
   "description": "microservicio de cheassy cheese",
-  "main": "/build/index.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "dev": "nodemon --exec tsx src/index.ts",
     "tsc": "tsc",
-    "start": "pm2 start src/index.js --attach"
+    "start": "pm2 start /build/index.js --attach"
   },
   "repository": {
     "type": "git",
