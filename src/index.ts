@@ -33,4 +33,8 @@ const options = {
 https.createServer(options,app).listen(port, () => {
     signale.success(`HTTPS Server running on port ${port}`);
 });
-
+/*
+app.listen(port, () => {
+    signale.success(`HTTPS Server running on port ${port}`);
+});
+*/
