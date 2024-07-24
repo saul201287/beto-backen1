@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "nodemon --exec tsx src/index.ts",
     "tsc": "tsc",
-    "start": "pm2 start /build/index.js --attach"
+    "start": "pm2 start build/index.js --attach"
   },
   "repository": {
     "type": "git",
