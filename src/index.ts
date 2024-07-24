@@ -1,11 +1,11 @@
 import express from 'express';
 import signale from 'signale';
-import {CheeseRouter} from './infrastructure/Routes';
 import morgan from 'morgan';
 import cors from 'cors';
 import https from 'https';
 import fs from 'fs';
 import dotenv from 'dotenv';
+import {CheeseRouter} from './infrastructure/Routes';
 
 const port = process.env.PORT || 3001;
 const app = express();
