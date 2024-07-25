@@ -10,13 +10,14 @@ export class CheeseRepositoryPrisma implements ICheeseRepository {
   }
 
   async getByUser(id: string): Promise<Cheese[]> {
-    return await this.prisma.cheese.findMany({ where: { id }});
+    return await this.prisma.cheese.findMany({ where: { userId:id }});
   }
 
   async getById(id: string): Promise<Cheese> {
     const foundCheese = await this.prisma.cheese.findUnique({
       where: { id },
     });
+    console.log(foundCheese);
     
     if (!foundCheese) {
       throw new Error(`Cheese with ID ${id} not found`);
